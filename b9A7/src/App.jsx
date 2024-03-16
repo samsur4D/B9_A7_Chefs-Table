@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -12,7 +12,23 @@ import RightSideCart from './RightSideCart';
   
 
 function App() {
-  const [count, setCount] = useState(0)
+const[cards ,setCards] = useState([]);
+
+
+            useEffect(() =>{
+                fetch('recipe.json')
+                .then(res => res.json())
+                .then(data => setCards(data));
+            },[]);
+             
+            
+            console.log(cards);
+
+            const handelAdd = (p) =>{
+              console.log(p);
+            }
+
+            
 
   return (
     <>
@@ -24,7 +40,13 @@ function App() {
 
         {/* last part */}
         <div className=' max-w-7xl mx-auto flex'>
-            <RecipeCart></RecipeCart>
+          <div className='cards-container grid grid-cols-2 mt-20 mr-10'>
+                   {
+                     cards.map((card) =>(
+                     <RecipeCart  card={card} handelAdd={handelAdd}></RecipeCart>
+                     ) ) }
+          </div>
+            
             <RightSideCart></RightSideCart>
         </div>
 
