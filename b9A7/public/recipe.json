@@ -1,0 +1,57 @@
+[
+    {
+      "recipe_id": 1,
+      "recipe_image": " https://i.ibb.co/fYxFZPt/george-zheng-0-Kbjfwunink-unsplash-1.jpg",
+      "recipe_name": "Grilled Chicken",
+      "short_description_recipe": "Juicy grilled chicken marinated in herbs",
+      "recipe_ingredients": ["550g chicken", "200g mushrooms", "1 tbsp olive oil", "Salt and pepper to taste"],
+      "recipe_preparing_time": "30 min",
+      "calories": "320 calories"
+    },
+    {
+      "recipe_id": 2,
+      "recipe_image": "https://i.ibb.co/wYYLr4x/louis-hansel-m-VZ-gjm-TOk-unsplash.jpg",
+      "recipe_name": "Vegetable Stir Fry",
+      "short_description_recipe": "Colorful mix of fresh vegetables stir-fried to perfection",
+      "recipe_ingredients": ["300g mixed vegetables (bell peppers, broccoli, carrots)", "150g tofu", "2 tbsp soy sauce", "1 tbsp sesame oil"],
+      "recipe_preparing_time": "20 min",
+      "calories": "250 calories"
+    },
+    {
+      "recipe_id": 3,
+      "recipe_image": "https://i.ibb.co/3MJQJCw/fahmi-anwar-Rc-LUE4s1k-XA-unsplash.jpg",
+      "recipe_name": "Pasta Carbonara",
+      "short_description_recipe": "Classic Italian pasta dish with creamy sauce",
+      "recipe_ingredients": ["250g spaghetti", "150g bacon", "3 large eggs", "1/2 cup grated Parmesan cheese", "2 cloves garlic"],
+      "recipe_preparing_time": "25 min",
+      "calories": "380 calories"
+    },
+    {
+      "recipe_id": 4,
+      "recipe_image": "https://i.ibb.co/yhy9vRW/anna-pelzer-IGf-IGP5-ONV0-unsplash.jpg",
+      "recipe_name": "Quinoa Salad",
+      "short_description_recipe": "Healthy and refreshing salad packed with nutrients",
+      "recipe_ingredients": ["1 cup quinoa", "1 cucumber", "1 bell pepper", "1/4 cup feta cheese", "2 tbsp lemon juice", "2 tbsp olive oil"],
+      "recipe_preparing_time": "15 min",
+      "calories": "220 calories"
+    },
+    {
+      "recipe_id": 5,
+      "recipe_image": "https://i.ibb.co/rkCBd3Z/sam-moghadam-khamseh-i3-A-se17-VAg-unsplash.jpg",
+      "recipe_name": "Beef Tacos",
+      "short_description_recipe": "Tasty tacos filled with seasoned beef and toppings",
+      "recipe_ingredients": ["300g ground beef", "1 packet taco seasoning", "8 taco shells", "1 cup shredded lettuce", "1/2 cup diced tomatoes", "1/4 cup shredded cheddar cheese"],
+      "recipe_preparing_time": "20 min",
+      "calories": "280 calories"
+    },
+    {
+      "recipe_id": 6,
+      "recipe_image": "https://i.ibb.co/WnbLbR8/4x3-mango-smoothie.jpg",
+      "recipe_name": "Mango Smoothie",
+      "short_description_recipe": "Refreshing smoothie made with ripe mangoes",
+      "recipe_ingredients": ["2 ripe mangoes", "1 cup yogurt", "1/2 cup milk", "1 tbsp honey", "Ice cubes"],
+      "recipe_preparing_time": "10 min",
+      "calories": "180 calories"
+    }
+  ]
+  
