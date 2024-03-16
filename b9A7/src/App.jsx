@@ -7,6 +7,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import Navbar from './Navbar';
 import Banner from './Banner';
 import Middle from './Middle';
+import RecipeCart from './RecipeCart';
+import RightSideCart from './RightSideCart';
   
 
 function App() {
@@ -19,6 +21,12 @@ function App() {
       <Banner></Banner>
       <Middle></Middle>
         
+
+        {/* last part */}
+        <div className=' max-w-7xl mx-auto flex'>
+            <RecipeCart></RecipeCart>
+            <RightSideCart></RightSideCart>
+        </div>
 
    <ToastContainer />
     </>
