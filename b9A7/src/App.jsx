@@ -19,6 +19,7 @@ const [sidebar , setSidebar] = useState([]);
 const [current , setCurrent] = useState([]);
 
 
+
 const handelAdd = (p) =>{
 
    
@@ -27,7 +28,7 @@ const handelAdd = (p) =>{
    if(!isHere){
     setSidebar([...sidebar,p])
    }else{
-    toast("I am Already Exist Baby 😏")
+    toast("I am Already Exist BRO !! 😏")
      
    }
  };
@@ -50,7 +51,7 @@ const handelDlt = (id)=>{
     setCurrent([...current,id])
 }
          
-       console.log(current)     
+       
   return (
     <>
           
