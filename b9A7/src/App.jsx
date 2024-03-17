@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { Children, useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -16,19 +16,20 @@ import RecipeCart from './RecipeCart';
 function App() {
 const[cards ,setCards] = useState([]);
 const [sidebar , setSidebar] = useState([]);
+const [current , setCurrent] = useState([]);
 
 
 const handelAdd = (p) =>{
-setSidebar([...sidebar])
-   setSidebar([...sidebar,p]);
-  // console.log( "ami p",p);
-  //  let isHere = sidebar.filter(item => item.id === p.recipe_id);
-  //  if(!isHere){
-  //   setSidebar([...sidebar,p])
-  //  }else{
-  //   toast("Already HEre")
+
+   
+  console.log( "ami p",p);
+   let isHere = sidebar.find(item => item.recipe_id === p.recipe_id);
+   if(!isHere){
+    setSidebar([...sidebar,p])
+   }else{
+    toast("I am Already Exist Baby 😏")
      
-  //  }
+   }
  };
 
 
@@ -42,9 +43,14 @@ setSidebar([...sidebar])
             // console.log(cards);
 
 
-
+const handelDlt = (id)=>{
+    const newCart = sidebar.filter(item => item.recipe_id != id.recipe_id) ;
+    console.log(newCart);
+    setSidebar(newCart);
+    setCurrent([...current,id])
+}
          
-            
+       console.log(current)     
   return (
     <>
           
@@ -86,23 +92,24 @@ setSidebar([...sidebar])
                          </tr>
                   </thead>
                   <tbody className=''>
-                      {
-                        sidebar.map((item , index)=>(
-                          <tr className='items-center'>
-                          <td className='basis-1/5'>{index+1}</td>
-                          <td className='basis-1/5'>{item.recipe_name}</td>
-                          <td className='basis-1/5'>{item.recipe_preparing_time}</td>
-                          <td className='basis-1/5'>{item.calories}</td>
-                          <td className='rounded-3xl px-3 bg-red-400 font-bold'>Preparing</td>
-                       </tr>
-                        ))
-                      }
+              {
+                sidebar.map((item , index)=>(
+                  <tr className='items-center'>
+                  <td className='basis-1/5'>{index+1}</td>
+                  <td className='basis-1/5'>{item.recipe_name}</td>
+                  <td className='basis-1/5'>{item.recipe_preparing_time}</td>
+                  <td className='basis-1/5'>{item.calories}</td>
+                  <td onClick={()=>handelDlt(item)}
+                                        className='rounded-3xl px-3 bg-red-400 font-bold'>Preparing</td>
+               </tr>
+                ))
+              }
                   </tbody>
             </table>
           </div>
 
           <div className='flex items-center justify-center -mt-0.5'>
-                <h2 className='font-bold text-3xl mt-20'>Currently Cooking : 1</h2>
+                <h2 className='font-bold text-3xl mt-20'>Currently Cooking : {current.length}</h2>
                 <hr />
                 <hr />
             </div>
@@ -122,13 +129,12 @@ setSidebar([...sidebar])
                   </thead>
                   <tbody>
                   {
-                        sidebar.map((item , index)=>(
-                          <tr className='items-center'>
-                          <td className='basis-1/5'>{index+1}</td>
-                          <td className='basis-1/5'>{item.recipe_name}</td>
-                          <td className='basis-1/5'>{item.recipe_preparing_time}</td>
-                          <td className='basis-1/5'>{item.calories}</td>
-                          {/* <td className='rounded-3xl px-3 bg-red-400 font-bold'>Preparing</td> */}
+                        current.map((pd , idx)=>(
+                    <tr className='items-center'>
+                          <td className='basis-1/5'>{idx + 1}</td>
+                          <td className='basis-1/5'>{pd.recipe_name}</td>
+                          <td className='basis-1/5'>{pd.recipe_preparing_time}</td>
+                          <td className='basis-1/5'>{pd.calories}</td>
                        </tr>
                         ))
                       }
