@@ -17,7 +17,7 @@ function App() {
 const[cards ,setCards] = useState([]);
 const [sidebar , setSidebar] = useState([]);
 const [current , setCurrent] = useState([]);
-const [total , seTotal] = useState([]);
+
 
 
 
@@ -29,7 +29,7 @@ const handelAdd = (p) =>{
    if(!isHere){
     setSidebar([...sidebar,p])
    }else{
-     toast("👻I am Already Exist Here BRO😏")
+     toast.error("👻 I am Already Exist Here BRO")
     //  lala
    }
  };
