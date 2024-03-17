@@ -21,6 +21,7 @@
 
 table , th {
   border-top: 1px solid black;
+  border-bottom: 1px solid black;
   border-collapse: collapse;
   padding: 5px 10px;
 }
@@ -37,16 +38,19 @@ tr{
   margin: 10px;
 }
 td{
-  border-radius: 5px;
+  border-radius: 2px;
   gap: 10px;
-  background: #ecf0f1;
+  /* background: #ecf0f1; */
   height: 35px;
   padding: 10px;
+  padding-right: 5px;
 }
-
-.table-one{
-
-}
+ tbody td{
+  background-color: #bdc3c7;
+ }
+/* .table-one{
+ background-color: #bdc3c7;
+} */
 
 .table-bottom{
     text-align: right;
@@ -57,9 +61,19 @@ td{
   border: 1px solid black;
 }
 
+.vugichugi{
+  margin-top: 5px;
+}
 
 
+.svg{
+--flex-direction: initial;
+--flex-wrap: initial;
+position: relative;
+display: block;
+height: 100px;
 
+}
 
 
 

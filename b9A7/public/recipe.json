@@ -8,8 +8,8 @@
       "ingredients_one": "550g chicken",
       "ingredients_two": "200g mushrooms",
       "ingredients_three": "1 tbsp olive oil",
-      "recipe_preparing_time": "30 min",
-      "calories": "320 calories",
+      "recipe_preparing_time": "30",
+      "calories": "320",
       "rating": 4.9
     },
     {
@@ -21,8 +21,8 @@
       "ingredients_one": "300g mixed vegetables",
       "ingredients_two": "150g tofu",
       "ingredients_three":"1 tbsp sesame oil",
-      "recipe_preparing_time": "20 min",
-      "calories": "250 calories",
+      "recipe_preparing_time": "20",
+      "calories": "250",
       "rating": 4.8
     },
     {
@@ -34,8 +34,8 @@
       "ingredients_one": "250g spaghetti",
       "ingredients_two": "150g bacon",
       "ingredients_three":"3 large eggs",
-      "recipe_preparing_time": "25 min",
-      "calories": "380 calories",
+      "recipe_preparing_time": "25",
+      "calories": "380",
       "rating": 4.2
     },
     {
@@ -47,8 +47,8 @@
       "ingredients_one": "1 cup quinoa",
       "ingredients_two": "1 bell pepper",
       "ingredients_three":"1/4 cup feta cheese",
-      "recipe_preparing_time": "15 min",
-      "calories": "220 calories",
+      "recipe_preparing_time": "15",
+      "calories": "220",
       "rating": 4.7
     },
     {
@@ -60,8 +60,8 @@
       "ingredients_one": "300g ground beef",
       "ingredients_two":"1 packet taco seasoning",
       "ingredients_three":"8 taco shells",
-      "recipe_preparing_time": "20 min",
-      "calories": "280 calories",
+      "recipe_preparing_time": "20",
+      "calories": "280",
       "rating": 4.5
     },
     {
@@ -73,7 +73,7 @@
       "ingredients_one": "2 ripe mangoes",
       "ingredients_two": "1 cup yogurt",
       "ingredients_three":"1/2 cup milk",
-      "recipe_preparing_time": "10 min",
+      "recipe_preparing_time": "10",
       "calories": "180",
       "rating": 4.3
     }
